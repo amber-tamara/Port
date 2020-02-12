@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav {
+  background-image: linear-gradient(
+    to right,
+    rgba(20, 27, 65, 0.85),
+    rgba(47, 36, 44, 0.85),
+    rgba(20, 27, 65, 0.85)
+  );
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#nav_list {
+  display: flex;
+  list-style: none;
+}
+
+li > a {
+  margin-left: 20px;
+  color: #ebebd3;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+a#fade_success {
+  border-bottom: 1px solid rgba(192, 192, 192, 0);
+  /* ^- the important bit. RGB 192,192,192 is the same as #C0C0C0*/
+
+  -webkit-transition: border 500ms ease;
+  -moz-transition: border 500ms ease;
+  -ms-transition: border 500ms ease;
+  -o-transition: border 500ms ease;
+  transition: border 500ms ease;
+}
+a#fade_success:hover {
+  border-bottom: 1px solid rgba(192, 192, 192, 1);
+}
+
+h1 {
+  display: inline-block;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+#wrapper {
+  background-image: linear-gradient(to right, #141b41, #2f242c, #141b41);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40vh;
+}
+
+span {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#c0227e),
+    to(#ce5b3f)
+  );
+  background-image: -o-linear-gradient(left, #c0227e, #ce5b3f);
+  background-image: linear-gradient(to right, #c0227e, #ce5b3f);
+  -webkit-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
